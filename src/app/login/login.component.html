@@ -1,0 +1,26 @@
+<div class="container">
+<div class="head">
+  <p>Login Now:</p>
+</div>
+
+
+    <div class="container">
+              <form [formGroup]="loginForm" (ngSubmit)="onLogIn()"> 
+                <div class="invalid" *ngIf="userInvalid === true">Invalid email or password!</div>
+                <div>
+                  <div>
+                    <p class="holder">email :</p>
+                    <input type="email" class="form-control" formControlName="email" id="email">
+                  </div>
+                  <div>
+                    <p class="holder">password :</p>
+                    <input type="password" class="form-control" formControlName="password" id="password">
+                  </div>
+                  <div>
+                    <button class="login-button" type="submit" [disabled]="loginForm.untouched? true : false">Login</button>
+                  </div>
+                </div>
+              </form>
+      </div>
+
+</div>

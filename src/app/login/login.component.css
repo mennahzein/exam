@@ -1,0 +1,21 @@
+.head{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.holder{
+  margin: 0;
+  color: rgb(100, 97, 97);
+}
+.login-button{
+  margin-top: 10px;
+  float: right;
+  border-radius: 8px;
+  background-color: #7aca73;
+  border: 2px solid #7aca73;
+  color: white;
+}
+.invalid{
+  color: red;
+}

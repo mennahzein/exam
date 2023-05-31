@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="head">
+    <p>Register Now :</p>
+  </div>
+  
+  
+      <div class="container">
+                <form [formGroup]="loginForm" (ngSubmit)="onLogIn()"> 
+                  <div class="invalid" *ngIf="userInvalid === true">Invalid username or password!</div>
+                  <div>
+                    <div>
+                      <p class="holder">name :</p>
+                      <input type="name" class="form-control" formControlName="name" id="name">
+                    </div>
+                    <div>
+                      <p class="holder">email :</p>
+                      <input type="email" class="form-control" formControlName="email" id="email">
+                    </div>
+                    <div>
+                      <p class="holder">password :</p>
+                      <input type="password" class="form-control" formControlName="password" id="password">
+                    </div>
+                    <div>
+                      <p class="holder">rePassword :</p>
+                      <input type="password" class="form-control" formControlName="repassword" id="repassword">
+                    </div>
+                    <div>
+                      <p class="holder">phone :</p>
+                      <input type="phone" class="form-control" formControlName="phone" id="phone">
+                    </div>
+                    <div>
+                      <button class="login-button" type="submit" [disabled]="loginForm.untouched? true : false">Register</button>
+                      
+                    </div>
+                  </div>
+                </form>
+        </div>
+  
+  </div>

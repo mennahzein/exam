@@ -1,0 +1,30 @@
+<div class="box mt-5">
+  <div class="my-2 w-25">
+    <label for="" class="my-1"> Categories</label>
+    <select class="form-control" (change)="filterCategory($event)">
+      <option value="{{option}}" *ngFor="let option of categories">{{option}} </option>
+      <option value="all" selected>ALL</option>
+      
+
+    </select>
+  </div>
+  <div class="row" >
+    <div class="col-md-3 col-sm-12" *ngFor="let item of products">
+      <div class="item">
+        <img  [src]="item.image" alt="">
+        <div class="body"> 
+            <h4>{{item.title}}</h4>
+            <p> {{item.description}}</p>
+        </div>
+      </div>
+      <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+        <button type="button" class="btn btn-outline-primary">Add To Cart</button>
+        <a  class="btn btn-outline-primary" [routerLink]="['/details/'+item.id]">Details</a>
+
+        <span> ${{item.price}}</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,40 @@
+nav{
+    background-color: whitesmoke;
+}
+.logo{
+    margin-top: 20px;
+
+}
+.sign{
+    margin: auto;
+    margin-left: 100px;
+    display: flex;
+}
+.content{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+     /* padding: 2 px 0;  */
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* width:20%; */
+    margin: 0;
+}
+li{
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(70, 125, 183);
+    text-decoration: none;
+    justify-content: space-between;
+     padding: 5%; 
+}
+.logo-image{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
